@@ -19,7 +19,7 @@
   </include> -->
   	<node pkg="drrobot_jaguar4x4_player" type="drrobot_jaguar4x4_player_node" name="drrobot_jaguar_player_node" output="screen" >
 		<remap from="drrobot_cmd_vel" to="cmd_vel"/>
-	<!--	<rosparam command="load" file="$(find drrobot_jaguar4x4_player)parameters/drrobot_jaguar4x4.yaml" />  -->
+	    <rosparam command="load" file="$(find drrobot_jaguar4x4_player)param/drrobot_jaguar4x4.yaml" />  
 	</node>
    <include file="$(find drrobot_jaguar4x4_player)/launch/gmapping.launch"> 
   </include>
