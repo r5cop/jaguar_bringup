@@ -1,0 +1,9 @@
+<launch>
+
+    <node pkg="joy" type="joy_node" name="joy_node" />
+	<node pkg="drrobot_jaguar4x4_player" type="drrobot_joystick_teleop" name="drrobot_joy_teleop" />
+	<node pkg="drrobot_jaguar4x4_player" type="drrobot_jaguar4x4_player_node" name="drrobot_jaguar_player_node" output="screen" >
+	<!--	<rosparam command="load" file="$(find drrobot_jaguar4x4_player)parameters/drrobot_jaguar4x4.yaml" />  -->
+	</node>
+
+</launch>
