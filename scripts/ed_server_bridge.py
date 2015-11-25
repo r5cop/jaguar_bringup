@@ -53,7 +53,7 @@ class SyncServer():
 if __name__ == '__main__':
     try:
         rospy.init_node('sync_server')
-        if rospy.has_param('~ip'):
+        if rospy.has_param('~ip') and rospy.has_param('~port'):
             ip = rospy.get_param('~ip')
             port = rospy.get_param('~port')
             server = SyncServer(ip, port)
