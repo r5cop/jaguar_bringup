@@ -1,9 +1,8 @@
-plugins:
+world_name: robotics_testlabs
 
-- name: sync_client
-  lib: libed_sync_plugin.so
-  parameters:
-      server: /amigo/ed/query
+# -----------------------------------------------------------------------------------------------------------------------------
+
+plugins:
 
 - name: gui_server
   lib: libed_gui_server_plugin.so
