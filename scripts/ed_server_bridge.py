@@ -23,7 +23,7 @@ class SyncServer():
         self._server = Server((ip, port), allow_none=True)
         self._server.register_function(self.get, 'get')
 
-        self._ros_service_proxy = rospy.ServiceProxy('/sergio/ed/query', Query)
+        self._ros_service_proxy = rospy.ServiceProxy('/amigo/ed/query', Query)
 
     # RPC METHOD
     def get(self, ids, properties, since_revision):
