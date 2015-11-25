@@ -39,7 +39,7 @@ base_local_planner: "dwa_local_planner/DWAPlannerROS"
 
 # For DWA local planner:
 DWAPlannerROS:
-  max_vel_x: 2
+  max_vel_x: 1
   min_vel_x: 0.55
 
   min_vel_y: 0.0

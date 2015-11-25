@@ -1,0 +1,14 @@
+# @section parameters ROS parameters, please read yaml file
+ 
+RobotCommMethod: 'Network'
+RobotBaseIP: '192.168.0.60'
+RobotPortNum: 10001
+RobotSerialPort: '/dev/ttyS0'
+RobotID: 'drrobotJaguar'
+RobotType: 'Jaguar'
+MotorDir: 1 
+WheelRadius: 0.135
+WheelDistance: 0.52
+EncoderCircleCn: 150
+MinSpeed: 0.01
+MaxSpeed: 4.0
